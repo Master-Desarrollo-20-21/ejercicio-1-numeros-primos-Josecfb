@@ -1,6 +1,6 @@
 public class Primos {
 	public static void main(String[] args) {
-		int max=50;
+		int max=51;
 		System.out.println("Suma de los primeros "+max+" primos: "+sumFirst(max));
 		System.out.println("Suma los primos hasta el número "+max+": "+sumUntil(max));
 	}
