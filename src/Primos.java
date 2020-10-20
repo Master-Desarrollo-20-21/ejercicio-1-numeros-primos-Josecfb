@@ -1,6 +1,6 @@
 public class Primos {
 	public static void main(String[] args) {
-		int max=51;
+		int max=50;
 		System.out.println("Suma de los primeros "+max+" primos: "+sumFirst(max));
 		System.out.println("Suma los primos hasta el número "+max+": "+sumUntil(max));
 	}
@@ -9,11 +9,10 @@ public class Primos {
 		int n=2;
 		int sum=0;
 		int nPrimos=1;
-		while (nPrimos<max) {
+		while (nPrimos<=max) {
 			if (isPrime(n)) {
 				nPrimos++;
 				sum+=n;
-				System.out.println(nPrimos+" "+n);
 			}
 			n++;
 		}
@@ -32,8 +31,10 @@ public class Primos {
 		if (num==2) 
 			return true;
 		int divisor=(int) Math.sqrt(num)+1;
+		
 		while (num%divisor!=0 && divisor>2)
 			divisor--;
+		
 		return num%divisor!=0;
 	}
 	
