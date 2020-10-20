@@ -9,10 +9,11 @@ public class Primos {
 		int n=2;
 		int sum=0;
 		int nPrimos=1;
-		while (nPrimos<=max) {
+		while (nPrimos<max) {
 			if (isPrime(n)) {
 				nPrimos++;
 				sum+=n;
+				System.out.println(nPrimos+" "+n);
 			}
 			n++;
 		}
